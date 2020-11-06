@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys
 
 def power():
@@ -10,4 +12,8 @@ def power():
 
 
 if __name__ == "__main__":
-   print(power())
+
+    if ((len(sys.argv)-1)) == 2 :
+       print(power())
+    else:
+       print("Usage: $ python ./power.py <base> <power> ")
